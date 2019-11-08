@@ -38,8 +38,9 @@ public class Card : MonoBehaviour {
 	}
 } // class Card
 
-[System.Serializable]
+[System.Serializable] //A Serializable class is able to be edited in the Inspector
 public class Decorator{
+    //This class stores information about each decorator or pip from DeckXML
 	public string	type;			// For card pips, tyhpe = "pip"
 	public Vector3	loc;			// location of sprite on the card
 	public bool		flip = false;	//whether to flip vertically
@@ -48,8 +49,8 @@ public class Decorator{
 
 [System.Serializable]
 public class CardDefinition{
+    //This class stores information for each rank of card
 	public string	face;	//sprite to use for face cart
 	public int		rank;	// value from 1-13 (Ace-King)
-	public List<Decorator>	
-					pips = new List<Decorator>();  // Pips Used
+	public List<Decorator> pips = new List<Decorator>();  // Pips Used
 }

@@ -17,12 +17,12 @@ public class Prospector : MonoBehaviour {
 	public Deck					deck;
 
 	void Awake(){
-		S = this;
+		S = this; //Set up a Singleton for Prospector
 	}
 
 	void Start() {
-		deck = GetComponent<Deck> ();
-		deck.InitDeck (deckXML.text);
+		deck = GetComponent<Deck> (); //Get the Deck
+		deck.InitDeck (deckXML.text); //Pass DeckXML to it
 	}
 
 }

@@ -63,10 +63,10 @@ public class Deck : MonoBehaviour {
 	// ReadDeck parses the XML file passed to it into Card Definitions
 	public void ReadDeck(string deckXMLText)
 	{
-		xmlr = new PT_XMLReader ();
-		xmlr.Parse (deckXMLText);
+		xmlr = new PT_XMLReader (); //create a new PT_XMLReader
+		xmlr.Parse (deckXMLText); // Use that PT_XMLReader to parse DeckXML
 
-		// print a test line
+		// print a test line to shouw you how xmlr can be used. 
 		string s = "xml[0] decorator [0] ";
 		s += "type=" + xmlr.xml ["xml"] [0] ["decorator"] [0].att ("type");
 		s += " x=" + xmlr.xml ["xml"] [0] ["decorator"] [0].att ("x");
