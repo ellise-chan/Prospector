@@ -36,7 +36,7 @@ public class Deck : MonoBehaviour {
 	public Dictionary<string, Sprite>	dictSuits;
 
 
-	// called by Prospector when it is ready
+	// InitDeck is called by Prospector when it is ready
 	public void InitDeck(string deckXMLText) {
 		// from page 576
 		if( GameObject.Find("_Deck") == null) {
@@ -72,11 +72,11 @@ public class Deck : MonoBehaviour {
 		s += " x=" + xmlr.xml ["xml"] [0] ["decorator"] [0].att ("x");
 		s += " y=" + xmlr.xml ["xml"] [0] ["decorator"] [0].att ("y");
 		s += " scale=" + xmlr.xml ["xml"] [0] ["decorator"] [0].att ("scale");
-		print (s);
+		//print (s); //Comment out his line, since we're done with the test.
 		
 		//Read decorators for all cards
 		// these are the small numbers/suits in the corners
-		decorators = new List<Decorator>();
+		decorators = new List<Decorator>(); //
 		// grab all decorators from the XML file
 		PT_XMLHashList xDecos = xmlr.xml["xml"][0]["decorator"];
 		Decorator deco;
