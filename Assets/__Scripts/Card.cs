@@ -44,7 +44,7 @@ public class Decorator{
 	public string	type;			// For card pips, tyhpe = "pip"
 	public Vector3	loc;			// location of sprite on the card
 	public bool		flip = false;	//whether to flip vertically
-	public float 	scale = 1.0f;
+	public float 	scale = 1.0f; // the scale of the Sprite
 }
 
 [System.Serializable]
