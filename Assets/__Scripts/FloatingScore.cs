@@ -40,7 +40,7 @@ public class FloatingScore : MonoBehaviour
     public float timeStart = -1f;
     public float timeDuration = 1f;
     public string easingCurve = Easing.InOut; // Uses Easing in Utils.cs
-                                              // The GameObject that will receive the SendMessage when this is done moving
+    // The GameObject that will receive the SendMessage when this is done moving
     public GameObject reportFinishTo = null;
     private RectTransform rectTrans;
     private Text txt;
