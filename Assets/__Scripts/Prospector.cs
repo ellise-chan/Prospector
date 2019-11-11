@@ -220,7 +220,7 @@ public class Prospector : MonoBehaviour {
         {
             print("Game Over. You Lost. :(");
         }
-        SceneManager.LoadScene("_Prospector_Scene_0");
+        SceneManager.LoadScene("__Prospector_Scene_0");
     }
 
     public bool AdjacentRank(CardProspector c0, CardProspector cl)
